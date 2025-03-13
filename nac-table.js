@@ -39,7 +39,7 @@ th {
   border-top: none;
 }
 thead tr {
-  background-color: #faaa39 !important;
+  background-color:#ff33fff !important;
 }
 
 tr {
