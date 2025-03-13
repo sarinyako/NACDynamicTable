@@ -675,39 +675,13 @@ let AndysTable = _decorate([e$1('andys-table')], function (_initialize, _LitElem
       <div class="table-wrapper">
         <table>
           <thead>
+         
             <tr>
-              
-              ${this.columns.map(column => y`
-                  <th @click="${() => this.onSortClick(column.field)}">
-                    ${y`<span class="flex-item">
-                      ${column.label}
-                      ${this.tableSort.direction === "asc" ? y`<svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            height="18px"
-                            width="18px"
-                            opacity="0"
-                            class="margin-left-4 ${this.tableSort.field === column.field ? "opacity" : ""}"
-                          >
-                            <path
-                              d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"
-                            />
-                          </svg>` : y`<svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            height="18px"
-                            width="18px"
-                            opacity="0"
-                            class="margin-left-4 dsc ${this.tableSort.field === column.field ? "opacity" : ""}"
-                          >
-                            <path
-                              d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"
-                            />
-                          </svg>`}
-                    </span>`}
-                  </th>
-                `)}
+             <th>Date</th> 
+             <th>Description</th> 
+             
             </tr>
+            
           </thead>
           <tbody>
             ${this.pageData.map(item => y`
